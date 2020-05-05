@@ -12,4 +12,11 @@ describe Calculator do
       expect(calculator.add(2, 5, 7)).to eql(14)
     end
   end
+
+  describe '#multiply' do
+    it 'returns the multiple of two numbers' do
+      calculator = Calculator.new
+      expect(calculator.multiply(2, 3)).to eql(6)
+    end
+  end
 end
